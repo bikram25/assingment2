@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>week2 assingment</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+
+        h1,
+        h3 {
+            font-size: 1.75em;
+        }
+
+        /* heading style */
+        h1 {
+            width: 200px;
+            margin: 20px auto;
+            text-align: center;
+            border: 2px solid red;
+            color: red;
+        }
+
+        div .item {
+            background-color: gray;
+            border: 2px solid black;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h3 {
+            width: 160px;
+            /* background-color: chocolate; */
+            border: 1px solid black;
+            position: sticky;
+            top: 0px;
+            left: 100%;
+            text-align: center;
+        }
+
+        div #item-2 h3 {
+            background-color: pink;
+        }
+
+        div #item-1 h3 {
+            background-color: darkorange;
+        }
+
+        div #item-3 h3 {
+            background-color: darkturquoise;
+        }
+
+        p {
+            padding: 3px 3px;
+            font-size: 1.25rem;
+        }
+
+        .col-lg-4 {
+            border: 10px solid #ffffff;
+        }
+
+
+        .row {
+            width: 100%;
+            border: 10px solid #ffffff;
+
+
+        }
+
+        /* giving responsiveness to the website */
+        @media (min-width: 992px) {
+            .col-lg-4 {
+                /* display: inline-block; */
+                float: left;
+                border: 10px solid #ffffff;
+                width: 33.3%;
+                /* margin-bottom:12px ; */
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 991px) {
+            .col-lg-4 {
+                /* display: inline-block; */
+                border: 10px solid #ffffff;
+                float: left;
+                width: 50%;
+            }
+
+            #colm3 {
+                width: 100%;
+                c
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Our Menu</h1>
+    <div class="row">
+        <div class="col-lg-4" id="colm1">
+            <div class="item" id="item-1">
+                <h3>Chicken</h3>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur minima, animi error eaque id
+                    dolorum repellat ipsum est asperiores eius blanditiis tempore cumque natus quisquam ea optio ex
+                    rerum hic?</P>
+            </div>
+        </div>
+        <div class="col-lg-4" id="colm2">
+            <div class="item" id="item-2">
+                <h3>Beef</h3>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur minima, animi error eaque id
+                    dolorum repellat ipsum est asperiores eius blanditiis tempore cumque natus quisquam ea optio ex
+                    rerum hic?</P>
+            </div>
+        </div>
+        <div class="col-lg-4" id="colm3">
+            <div class="item" id="item-3">
+                <h3>Sushi</h3>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur minima, animi error eaque id
+                    dolorum repellat ipsum est asperiores eius blanditiis tempore cumque natus quisquam ea optio ex
+                    rerum hic?</P>
+            </div>
+        </div>
+
+
+
+    </div>
+</body>
+
+</html>
